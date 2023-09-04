@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posisioning</title>
+    <style>
+body {
+    height: 12000px;
+  }
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+.container {
+    /* parent relative  */
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: seagreen;
+    border: 5px solid black;
+}
+#box-1{
+    /* without relative i cant move position */
+    /* zindexmoves the id in front lower more in front */
+    position: relative;
+    top: 50px;
+    left: 50px; 
+    z-index: 1;
+    background: yellow
+    
+}
+#box-2{
+    position: absolute;
+    /* how much away from the top of the container */
+    top: 120px;
+    left: 50px;
+    background: rgb(252, 130, 78)
+}
+#box-3{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    background: rgb(252, 130, 78)
+}
+#box-4{
+    /* scrolling will mean the id will be fixed */
+position: fixed;
+    background: red;
+    
+}
+#box-5{
+    /* good for menus to stay at top */
+    position: sticky;
+    top: 0;
+    background: red;
+}
+
+
+    </style>
+
+<body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+</body>
+</head>
+</html>
