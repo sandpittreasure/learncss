@@ -1,0 +1,51 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* bar at top with no scroll */
+.nav-bar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: brown;
+        border-radius: 5px;
+        overflow: auto;
+    }
+    /* backround gone without overflow */
+    .nav-bar li {
+        float: left;
+    }
+/* the top menu block */
+    .nav-bar li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 20px;
+    }
+    .nav-bar li a:hover{
+        background-color: red;
+        color: green;
+    }
+.side-menu {
+    list-style: none;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+   
+}
+.side-menu li {
+    font-size: 18px;
+    line-height: 2.4em;
+    border-bottom: dotted 1px gray;
+        
+/*  */
+    }
+    .side-menu li a {
+        color: black;
+        text-decoration: none;
+        
+    }
+    .side-menu li a:hover {
+        color: aqua;
+    }

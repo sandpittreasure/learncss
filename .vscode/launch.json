@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open inlinedisplay.html",
-            "file": "c:\\Users\\pitts\\Documents\\github\\csswebdesign\\html\\learn html\\css\\inlinedisplay.html"
+            "file": "C:\\learncss\\css\\index.html"
         }
     ]
 }
